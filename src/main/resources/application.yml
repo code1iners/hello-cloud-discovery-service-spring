@@ -9,3 +9,6 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+  server:
+    enable-self-preservation: false # 개발 시에만 사용 운영 시 삭제
+    eviction-interval-timer-in-ms: 1000 # 하트비트 수신 점검
